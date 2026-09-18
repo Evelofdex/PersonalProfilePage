@@ -1,0 +1,9 @@
+#mainCol {
+    background-color: darkgreen;
+
+    width: 700px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: collumn;
+}
