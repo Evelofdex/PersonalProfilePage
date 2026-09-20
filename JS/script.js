@@ -1,11 +1,11 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
-            entry.target.classList.add("aboutCanvas__Entry")
+            aboutCanvas.classList.add("aboutCanvas__Entry")
         }
     })
-}, {threshold: 1});
+}, {threshold: 0.9});
 
-if (aboutCanvas) observer.observe(aboutCanvas)
+observer.observe(trigger__aboutCanvas);
 
 
