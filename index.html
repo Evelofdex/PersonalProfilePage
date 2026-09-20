@@ -3,7 +3,8 @@
     <head>
         <title> Profile Website </title>
         <script src="./JS/elements.js" defer></script>
-        <script src="./JS/script.js" defer></script>
+        <script src="./JS/aboutColAnim.js" defer></script>
+        <script src="./JS/mainColAnim.js" defer></script>
         <link rel="stylesheet" href="./CSS/mainCol.css">
         <link rel="stylesheet" href="./CSS/navCol.css">
         <link rel="stylesheet" href="./CSS/aboutCol.css">
@@ -33,7 +34,7 @@
                     height: 50px;
                     background-color: green;
                     position: absolute;
-                    top: 1500px;
+                    top: 1400px;
                     z-index: 10;
                 }
             </style>    
@@ -60,6 +61,7 @@
     
                 </div>
                 <div id="mainCol">
+                    <div id="mainCol_title_transition"></div>
                     <p id="mainCol_title">Evelofdex</p>
                     <div style="width: 500px;  height: 80px;">
                         <p id="mainCol_subtitle"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem odit sint obcaecati. Dolorem mollitia sit distinctio in magnam, quasi illo sed velit voluptas, dolorum ullam repellendus laboriosam eveniet rem." </p>
@@ -69,14 +71,14 @@
             <div id="aboutCanvas" class="aboutCanvas__beforeEntry">
                 <div id="aboutCol">
                     <div id="aboutCol_titleBox">
-                        <div id="aboutCol_title__line"></div>
-                        <p id="aboutCol_title">About me</p>
+                        <div id="aboutCol_title__line" class="aboutCol_title__line__beforeEntry"></div>
+                        <p id="aboutCol_title" class="aboutCol_title__beforeEntry">About me</p>
                     </div>
                     <div id="aboutCol_2ndCollumn">
                         <div id="aboutCol_objects">
                             
                         </div>
-                        <div id="aboutCol_subtitleBox">
+                        <div id="aboutCol_subtitleBox" class="aboutCol_subtiteBox__beforeEntry">
                             <p id="aboutCol_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum, perspiciatis laudantium iure dignissimos nobis quo error eius sequi voluptate non, sint modi? Repudiandae ipsum incidunt cum dolor tempore eos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, odit perferendis nostrum modi assumenda ex et deserunt quae velit placeat eos dolorum, accusamus facilis consectetur aliquid minus incidunt aut enim.</p>
                         </div>
                     </div>

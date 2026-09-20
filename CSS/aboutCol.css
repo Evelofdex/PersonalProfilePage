@@ -10,12 +10,8 @@
     z-index: 2;
     transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.aboutCanvas__beforeEntry{
-    transform: translateY(-950px);
-}
-.aboutCanvas__Entry{
-    transform: translateY(0px);
-}
+.aboutCanvas__beforeEntry{ transform: translateY(-950px); }
+.aboutCanvas__Entry{ transform: translateY(0px); }
 
 
 
@@ -31,7 +27,7 @@
     position: relative;
 }
 #aboutCol_title__line{
-    width: 100%;
+    /* width: 100%; */
     height: 3px;
     background-color: whitesmoke;
     position: absolute;
@@ -41,19 +37,16 @@
     border-bottom-right-radius: 20px;
     transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, 
     height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s,
-    background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+    background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s,
+    width 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 #aboutCol_titleBox:hover #aboutCol_title__line{
     top: 30px;
     height: 60%;
     background-color: grey;
 }
-#aboutCol_title__line:hover{
-    width: 100%;
-}
-.aboutCol_title__line__beforeAnimState{
-    width: 0;
-}
+.aboutCol_title__line__beforeEntry{ width: 0; }
+.aboutCol_title__line__Entry{ width: 100%; }
 
 #aboutCol_title{
     color: white;
@@ -69,13 +62,18 @@
     position: relative;
     z-index: 2;
     cursor: default;
+    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s;
 }
+.aboutCol_title__beforeEntry{ transform: translateX(-120%); }
+.aboutCol_title__Entry{ transform: translateX(0); }
+
 #aboutCol_2ndCollumn{
     background-color: transparent;
     display: flex;
     flex-direction: row;
     height: 50%;
     width: 100%;
+    overflow-x: hidden;
 }
 #aboutCol_objects{
     width: 40%;
@@ -88,7 +86,10 @@
     background-color: #252e3b;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
 }
+.aboutCol_subtiteBox__beforeEntry{ transform: translateX(100%); }
+.aboutCol_subtitleBox__Entry{ transform: translateX(0px); }
 #aboutCol_subtitle{
     color: white;
     font-size: 20px;

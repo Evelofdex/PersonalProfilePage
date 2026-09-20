@@ -15,6 +15,20 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
 }
+#mainCol_title_transition{
+    width: 700px;
+    height: 80px;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.163);
+    position: relative;
+    top: 100px;
+    left: -20px;
+    clip-path: inset(0 100% 0 0); /*top right bottom left*/
+    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mainCol_title_transition__toRightFadeIn{ clip-path: inset(0 0 0 0); }
+.mainCol_title_transition__toRightFadeOut{ clip-path: inset(0 0 0 100%); }
+
 #mainCol_subtitle{
     color: rgb(181, 180, 180);
     text-align: center;
