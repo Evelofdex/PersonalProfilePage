@@ -2,12 +2,15 @@
 <html>
     <head>
         <title> Profile Website </title>
+        <script src="./JS/elements.js" defer></script>
+        <script src="./JS/script.js" defer></script>
         <link rel="stylesheet" href="./CSS/mainCol.css">
         <link rel="stylesheet" href="./CSS/navCol.css">
         <link rel="stylesheet" href="./CSS/aboutCol.css">
         <link rel="stylesheet" href="./CSS/timelineCol.css">
         <link rel="stylesheet" href="./CSS/projectsCol.css">
         <link rel="stylesheet" href="./CSS/footer.css">
+        
         <style>
             body {
                 background-color: white;
@@ -31,9 +34,8 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        justify-content: center;
                         width: 100%;
-                        height: 1100px;
+                        height: 1200px;
                         margin-bottom: 0px;
                         background-image: linear-gradient(to top, #222f42, #10161f, #000000, #000000, #000000, #151621, #131b28);
                         border-bottom-left-radius: 50px;
@@ -72,25 +74,16 @@
                 </style>
             </div> -->
 
-            <div id="aboutCanvas">
-                <style>
-                    #aboutCanvas{
-                        background-color: #030e1a;
-                        width: 100%;
-                        height: 1000px;
-                        margin-top: 0px;
-                        border-bottom-left-radius: 40px;
-                        border-bottom-right-radius: 40px;
-                        position: relative;
-                        top: -50px;
-                        z-index: 2;
-                    }
-                </style>
+            <div id="aboutCanvas" class="aboutCanvas__beforeEntry">
                 <div id="aboutCol">
                     <div id="aboutCol_titleBox">
+                        <div id="aboutCol_title__line"></div>
                         <p id="aboutCol_title">About me</p>
                     </div>
                     <div id="aboutCol_2ndCollumn">
+                        <div id="aboutCol_objects">
+                            
+                        </div>
                         <div id="aboutCol_subtitleBox">
                             <p id="aboutCol_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum, perspiciatis laudantium iure dignissimos nobis quo error eius sequi voluptate non, sint modi? Repudiandae ipsum incidunt cum dolor tempore eos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, odit perferendis nostrum modi assumenda ex et deserunt quae velit placeat eos dolorum, accusamus facilis consectetur aliquid minus incidunt aut enim.</p>
                         </div>
