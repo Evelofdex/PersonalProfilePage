@@ -1,9 +1,20 @@
 #mainCol {
-    background-color: darkgreen;
-
-    width: 700px;
-    height: 500px;
-
+    background-color: transparent;
+    width: 70%;
     display: flex;
-    flex-direction: collumn;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mainCol_title{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+#mainCol_subtitle{
+    color: rgb(181, 180, 180);
+    text-align: center;
+    font-size: 15px;
 }

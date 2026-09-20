@@ -1,0 +1,5 @@
+color palette:
+#243247
+#1D2839
+#EBEFF5
+#3E567A

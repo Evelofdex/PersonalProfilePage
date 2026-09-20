@@ -1,6 +1,13 @@
 #aboutCol {
-    background-color: lightyellow;
+    background-color: transparent;
     width: 700px;
     height: 500px;
-
+    padding-top: 20px;
+    padding-left: 30px;
+}
+#aboutCol_title{
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }

@@ -11,6 +11,7 @@
         <style>
             body {
                 background-color: black;
+                margin: 0px;
             }
 
             #baseCanvasCollumn {
@@ -18,30 +19,95 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 20px;
             }
         </style>
     </head>
     <body>
         <div id="baseCanvasCollumn">
-            <div id="navCol">
 
+            <div id="mainCanvas">
+                <style>
+                    #mainCanvas{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        gap: 30px;
+                        margin-bottom: 0px;
+                        padding-top: 50px;
+                        background-image: linear-gradient(to top, #000000,  #1d2839);
+                        border-bottom-left-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                    }
+                </style>
+                <div id="navCol">
+    
+                </div>
+                <div id="mainCol">
+                    <p id="mainCol_title">Evelofdex</p>
+                    <div style="width: 500px;  height: 80px;">
+                        <p id="mainCol_subtitle"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem odit sint obcaecati. Dolorem mollitia sit distinctio in magnam, quasi illo sed velit voluptas, dolorum ullam repellendus laboriosam eveniet rem." </p>
+                    </div>
+                </div>
             </div>
-            <div id="mainCol">
+            <div id="mainCanvas__LowerPart">
+                <style>
+                    #mainCanvas__LowerPart{
+                        width: 100%;
+                        height: 300px;
+                        background-image: linear-gradient(to top, #1d2839, #000000);;
+                        display: flex;
+                        border-top-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                        border-bottom-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        position: relative;
+                        top: 30px;
+                    }
+                </style>
+            </div>
 
-            </div>
-            <div id="aboutCol">
+            <div id="aboutCanvas">
+                <style>
+                    #aboutCanvas{
+                        background-color: #0b1728;
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+                </style>
+                <div id="aboutCol">
+                    <p id="aboutCol_title">About me</p>
+                    <div id="">
 
+                    </div>
+                </div>
             </div>
-            <div id="timelineCol">
-
+            <div id="timelineCanvas"> 
+                <style>
+                    #timelineCanvas{
+                        width: 100%;
+                        height: 300px;
+                        background-color: #1D2839;
+                        border-top-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                        position: relative;
+                        top: -40px;
+                    }
+                </style>
+                <div id="timelineCol">
+                    
+                </div>
             </div>
+            <!-- 
             <div id="projectsCol"">
 
-            </div>
+            </div> -->
         </div>
     </body>
     <footer>
-        <p>Copyright © 2026</p>
+        <p></p>
     </footer>
 </html>
