@@ -1,4 +1,5 @@
 //Collumn, Main part
+const mainCol_title = document.getElementById("mainCol_title")
 const mainCol_title_transition = document.getElementById("mainCol_title_transition");
 
 //Collumns, about part

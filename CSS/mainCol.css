@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 #mainCol_title{
     color: white;
@@ -15,17 +15,20 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
 }
+.mainCol_title__invisible{ opacity: 0%; }
+.mainCol_title__visible{ opacity: 100%; }
 #mainCol_title_transition{
     width: 700px;
     height: 80px;
     margin-left: auto;
-    background-color: rgba(255, 255, 255, 0.163);
+    background-color: white;
     position: relative;
     top: 100px;
     left: -20px;
-    clip-path: inset(0 100% 0 0); /*top right bottom left*/
+    /* clip-path: inset(0 100% 0 0); (top right bottom left) */
     transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+.mainCol_title_transition__defaultFromLeft{ clip-path: inset(0 100% 0 0); }
 .mainCol_title_transition__toRightFadeIn{ clip-path: inset(0 0 0 0); }
 .mainCol_title_transition__toRightFadeOut{ clip-path: inset(0 0 0 100%); }
 
