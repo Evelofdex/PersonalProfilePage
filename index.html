@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./CSS/footer.css">
         <style>
             body {
-                background-color: black;
+                background-color: white;
                 margin: 0px;
             }
 
@@ -33,12 +33,13 @@
                         align-items: center;
                         justify-content: center;
                         width: 100%;
-                        gap: 30px;
+                        height: 1100px;
                         margin-bottom: 0px;
-                        padding-top: 50px;
-                        background-image: linear-gradient(to top, #000000,  #1d2839);
-                        border-bottom-left-radius: 40px;
-                        border-bottom-right-radius: 40px;
+                        background-image: linear-gradient(to top, #222f42, #10161f, #000000, #000000, #000000, #151621, #131b28);
+                        border-bottom-left-radius: 50px;
+                        border-bottom-right-radius: 50px;
+                        position: relative;
+                        z-index: 3;
                     }
                 </style>
                 <div id="navCol">
@@ -51,12 +52,12 @@
                     </div>
                 </div>
             </div>
-            <div id="mainCanvas__LowerPart">
+            <!-- <div id="mainCanvas__LowerPart">
                 <style>
                     #mainCanvas__LowerPart{
                         width: 100%;
                         height: 300px;
-                        background-image: linear-gradient(to top, #1d2839, #000000);;
+                        background-image: linear-gradient(to top, #2d3e57, #000000);;
                         display: flex;
                         border-top-left-radius: 40px;
                         border-top-right-radius: 40px;
@@ -65,23 +66,34 @@
                         margin-top: 0px;
                         margin-bottom: 0px;
                         position: relative;
-                        top: 30px;
+                        top: 15px;
+                        z-index: 3;
                     }
                 </style>
-            </div>
+            </div> -->
 
             <div id="aboutCanvas">
                 <style>
                     #aboutCanvas{
-                        background-color: #0b1728;
+                        background-color: #030e1a;
                         width: 100%;
+                        height: 1000px;
                         margin-top: 0px;
+                        border-bottom-left-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                        position: relative;
+                        top: -50px;
+                        z-index: 2;
                     }
                 </style>
                 <div id="aboutCol">
-                    <p id="aboutCol_title">About me</p>
-                    <div id="">
-
+                    <div id="aboutCol_titleBox">
+                        <p id="aboutCol_title">About me</p>
+                    </div>
+                    <div id="aboutCol_2ndCollumn">
+                        <div id="aboutCol_subtitleBox">
+                            <p id="aboutCol_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum, perspiciatis laudantium iure dignissimos nobis quo error eius sequi voluptate non, sint modi? Repudiandae ipsum incidunt cum dolor tempore eos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, odit perferendis nostrum modi assumenda ex et deserunt quae velit placeat eos dolorum, accusamus facilis consectetur aliquid minus incidunt aut enim.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,12 +101,13 @@
                 <style>
                     #timelineCanvas{
                         width: 100%;
-                        height: 300px;
-                        background-color: #1D2839;
-                        border-top-left-radius: 40px;
-                        border-top-right-radius: 40px;
+                        height: 1000px;
+                        background-color: #252e3b;
+                        border-bottom-left-radius: 40px;
+                        border-bottom-right-radius: 40px;
                         position: relative;
-                        top: -40px;
+                        top: -100px;
+                        z-index: 1;
                     }
                 </style>
                 <div id="timelineCol">

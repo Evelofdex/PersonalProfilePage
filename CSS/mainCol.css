@@ -1,10 +1,12 @@
 #mainCol {
     background-color: transparent;
     width: 70%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
 }
 #mainCol_title{
     color: white;
