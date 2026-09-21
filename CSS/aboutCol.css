@@ -8,9 +8,9 @@
     position: relative;
     top: -50px;
     z-index: 2;
-    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.aboutCanvas__beforeEntry{ transform: translateY(-950px); }
+.aboutCanvas__beforeEntry{ transform: translateY(-960px); }
 .aboutCanvas__Entry{ transform: translateY(0px); }
 
 
@@ -93,5 +93,7 @@
 #aboutCol_subtitle{
     color: white;
     font-size: 20px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 30px;
 }
