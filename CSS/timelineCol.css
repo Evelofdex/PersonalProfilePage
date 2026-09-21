@@ -1,3 +1,25 @@
+#timelineCanvas{
+    width: 100%;
+    height: 1000px;
+    background-color: #252e3b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s, 
+    opacity 0.3s ease-out 0.2s;
+}
+.timelineCanvas__beforeEntry{ 
+    opacity: 0%;
+    transform: translateY(-500px);
+}
+.timelineCanvas__Entry{ 
+    opacity: 100%;
+    transform: translateX(0px); 
+}
 #timelineCol {
     background-color: transparent;
     width: 700px;
